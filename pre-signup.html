@@ -97,6 +97,8 @@
     
     <!-- form-start -->
     <div class="container">
+        <h3>Pré-cadastro</h3>
+
         <form action="#">
             <!-- informacoes_pessoais-start -->
             <div class="card my-3">
@@ -111,9 +113,17 @@
                             </div>                            
                         </div>
 
-                        <div class="col">
+                        <div class="col-2">
                             <div class="form-group">
-                                <input id="datepicker" placeholder="Data de nascimento">
+                                <input type="text" name="cpf" placeholder="CPF"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'CPF'" required
+                                            class="single-input">
+                            </div>                            
+                        </div>
+
+                        <div class="col-3">
+                            <div class="form-group">
+                                <input id="datepicker" placeholder="Data de nascimento" required>
                             </div>
                         </div>
                     </div>
@@ -143,13 +153,7 @@
                             </div>                            
                         </div>
 
-                        <div class="col">
-                            <div class="form-group">
-                                <input type="text" name="cpf" placeholder="CPF"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'CPF'" required
-                                            class="single-input">
-                            </div>                            
-                        </div>
+                        
                     </div>
                 </div>
             </div>
