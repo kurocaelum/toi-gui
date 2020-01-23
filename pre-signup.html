@@ -105,7 +105,7 @@
                 <div class="card-header">Informações pessoais</div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-8">
                             <div class="form-group">
                                 <input type="text" name="nome_completo" placeholder="Nome completo"
                                             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Nome completo'" required
@@ -113,19 +113,13 @@
                             </div>                            
                         </div>
 
-                        <div class="col-2">
+                        <div class="col">
                             <div class="form-group">
-                                <input type="text" name="cpf" placeholder="CPF"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'CPF'" required
+                                <input type="text" name="ocupacao" placeholder="Ocupação"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ocupação'" required
                                             class="single-input">
-                            </div>                            
-                        </div>
-
-                        <div class="col-3">
-                            <div class="form-group">
-                                <input id="datepicker" placeholder="Data de nascimento" required>
-                            </div>
-                        </div>
+                            </div>   
+                        </div>                        
                     </div>
 
                     <div class="row">
@@ -144,16 +138,20 @@
                                             class="single-input">
                             </div>                            
                         </div>
-
+                        
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" name="ocupacao" placeholder="Ocupação"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ocupação'" required
+                                <input type="text" name="cpf" placeholder="CPF"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'CPF'" required
                                             class="single-input">
                             </div>                            
                         </div>
 
-                        
+                        <div class="col">
+                            <div class="form-group">
+                                <input id="datepicker" placeholder="Data de nascimento" required>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -240,9 +238,6 @@
                             </div>
                         </div>
                     </div>
-                    
-
-
                 </div>
 
                 
