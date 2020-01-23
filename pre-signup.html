@@ -97,9 +97,11 @@
     
     <!-- form-start -->
     <div class="container">
-        <div class="col-lg-10 col-md-10">
-            <div class="popup_box">
-                <form action="#">
+        <form action="#">
+            <!-- informacoes_pessoais-start -->
+            <div class="card my-3">
+                <div class="card-header">Informações pessoais</div>
+                <div class="card-body">
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
@@ -149,11 +151,154 @@
                             </div>                            
                         </div>
                     </div>
-                </form>
+                </div>
             </div>
-        </div>
-    </div>
+            <!-- informacoes_pessoais-end -->
+
+            <!-- dados_sociodemograficos-start -->
+            <div class="card my-3">
+                <div class="card-header">Dados sociodemográficos</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="single-input">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                                class="single-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                                class="single-input">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                                class="single-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- dados_sociodemograficos-end -->
+
+            <!-- historico_clinico-start -->
+            <div class="card my-3">
+                <div class="card-header">Histórico clínico</div>
+                    
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Toma medicação?</label>
+                                <input type="checkbox" id="confirm-checkbox" class="ml-2">
+                                <small class="form-text text-muted">(que não seja para dormir)</small>
+                            </div>
+                            
+                            <!-- <div class="switch-wrap d-flex justify-content-start">
+                                <p>03. Confirm Color Checkbox</p>
+                                <div class="confirm-checkbox">
+                                    <label>Toma medicação? (que não seja para dormir)</label>
+                                    <input type="checkbox" id="confirm-checkbox">
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="col">
+                            <label>Quais?</label>
+                            
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                    class="single-input">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                    class="single-input">
+                            </div>
+                        </div>
+                    </div>
+                    
+
+
+                </div>
+
+                
+                <div class="card-body"></div>
+            </div>
+            <!-- historico_clinico-end -->
+
+            <!-- historico_de_sono-start -->
+            <div class="card my-3">
+                <div class="card-header">Histórico de sono</div>
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="single-input">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                                class="single-input">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                                class="single-input">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                                class="single-input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- historico_de_sono-end -->
+
+            <div class="button-group-area text-center my-4">
+                <a href="#" class="genric-btn danger-border radius e-large">Cancelar</a>
+                <input class="genric-btn info-border radius e-large" type="submit" value="Continuar"/>
+            </div>
+
+        </form>
+        
+        
     
+    </div>
     <!-- form-end -->
     
 <!-- footer start -->
