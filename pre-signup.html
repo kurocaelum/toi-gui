@@ -264,14 +264,17 @@
             <!-- historico_de_sono-end -->
 
             <div class="button-group-area text-center my-4">
-                <a href="#" class="genric-btn danger-border radius e-large">Cancelar</a>
-                <input class="genric-btn info-border radius e-large" type="submit" value="Cadastrar"/>
+                <a href="index2.html" class="genric-btn danger-border radius e-large">Cancelar</a>
+                <!-- <input class="genric-btn info-border radius e-large" type="submit" value="Cadastrar"/> -->
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="genric-btn info-border radius e-large" data-toggle="modal" data-target="#preSignupSubmit">
+                    Cadastrar
+                </button>
+                
             </div>
 
         </form>
-        
-        
-    
     </div>
     <!-- form-end -->
     
@@ -422,6 +425,31 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
         </div>
     </form>
     <!-- form itself end -->
+
+    <!-- Modal-start -->
+    <div class="modal fade" id="preSignupSubmit" tabindex="-1" role="dialog" aria-labelledby="preSignupLabel" aria-hidden="true">
+        <div class="modal-dialog text-center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="preSignupLabel">Dados enviados!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                    Obrigado por demonstrar interesse em nossa pesquisa. Seus dados foram enviados com sucesso, e você agora está registrado para triagem.
+                    <br/><br/>
+                    Caso aprovado, entraremos em contato por e-mail.
+                    <br/>
+                </div>
+                <div class="modal-footer">
+                    <!-- No mockup está como "Retornar para a home" -->
+                    <a href="gravidade-form2.html" class="genric-btn info-border radius e-large">Concluir</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal-end -->
 
     <!-- JS here -->
     <script src="js/vendor/modernizr-3.5.0.min.js"></script>
