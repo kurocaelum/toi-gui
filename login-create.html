@@ -1,0 +1,361 @@
+<!doctype html>
+<html class="no-js" lang="zxx">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<title>TCC Online - Criar login</title>
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- <link rel="manifest" href="site.webmanifest"> -->
+	<link rel="shortcut icon" type="image/x-icon" href="img/favicon.png">
+	<!-- Place favicon.ico in the root directory -->
+
+	<!-- CSS here -->
+	<!-- <link rel="stylesheet" href="css/bootstrap.min.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/magnific-popup.css">
+	<link rel="stylesheet" href="css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/themify-icons.css">
+	<link rel="stylesheet" href="css/nice-select.css">
+	<link rel="stylesheet" href="css/flaticon.css">
+	<link rel="stylesheet" href="css/gijgo.css">
+	<link rel="stylesheet" href="css/animate.css">
+	<link rel="stylesheet" href="css/slicknav.css">
+	<link rel="stylesheet" href="css/style.css">
+	<!-- <link rel="stylesheet" href="css/responsive.css"> -->
+</head>
+
+<body>
+	<!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+    <!-- header_area-start -->
+    <div class="mx-2 sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="index2.html">TCC Online</a>
+            <!-- <a class="navbar-brand" href="#"><img src="img/logo.png" alt=""></a> -->
+            
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse ml-4" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index2.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sobre</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contato</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Login" aria-label="Search">
+                <input class="form-control mr-sm-2" type="password" placeholder="Senha" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0 mx-2" type="submit">Entrar</button>
+                <!-- <button class="btn btn-outline-success my-2 my-sm-0 mx-2" type="submit">Cadastrar</button> -->
+              </form>
+            </div>
+          </nav>
+    </div>
+    <!-- header_area-end -->
+
+
+	<!-- Formulario-start -->
+	<div class="container">
+		<div class="section-top-border">
+			<h2 class="mb-40">Cadastro</h2>
+
+			<form action="#">
+				<h4 class="mb-30">Avalie a gravidade atual (2 últimas semanas) do seu problema de insônia</h4>
+				<div class="row">
+					<div class="col">
+						<div class="form-group">
+							<label class="col-form-label">Dificuldade de iniciar o sono</label> 
+							<div class="default-select" id="default-select">
+								<select th:field="*{iniciarSono}">
+									<option value="0">Nenhuma</option>
+									<option value="1">Leve</option>
+									<option value="2">Moderada</option>
+									<option value="3">Grave</option>
+									<option value="4">Muito grave</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="form-group">
+							<label class="col-form-label">Dificuldade de manter o sono </label> 
+							<div class="default-select" id="default-select">
+								<select th:field="*{manterSono}" data-width="auto">
+									<option value="0">Nenhuma</option>
+									<option value="1">Leve</option>
+									<option value="2">Moderada</option>
+									<option value="3">Grave</option>
+									<option value="4">Muito grave</option>
+								</select>
+							</div>
+						</div>
+					</div>
+
+					<div class="col">
+						<div class="form-group">
+							<label class="col-form-label">Acordar cedo demais </label>
+							<div class="default-select" id="default-select">
+								<select th:field="*{acordarCedo}" data-width="auto">
+									<option value="0">Nenhuma</option>
+									<option value="1">Leve</option>
+									<option value="2">Moderada</option>
+									<option value="3">Grave</option>
+									<option value="4">Muito grave</option>
+								</select>
+							</div> 
+						</div>
+					</div>
+				</div>
+
+				<div class="d-flex flex-column">
+					
+					<div class="form-group p-2">
+						<label class="col-form-label">Quão satisfeito/insatisfeito você está com seu padrão de sono atual?</label>
+						<br/>
+						<label class="form-sm">(0 indica muito insatisfeito, 4 indica muito satisfeito)</label>
+						<div class="default-select" id="default-select">
+							<select th:field="*{acordarCedo}" data-width="auto">
+								<option value="0">0</option>
+								<option value="1">1</option>
+								<option value="2">2</option>
+								<option value="3">3</option>
+								<option value="4">4</option>
+							</select>
+						</div> 
+					</div>
+
+					<div class="form-group p-2">
+						<label class="col-form-label">Quanto você considera que seu problema de sono interfere na sua atividade diária?</label>
+						<div class="default-select" id="default-select">
+							<select th:field="*{interferenciaDiaria}" data-width="auto">
+								<option value="0">Não interfere</option>
+								<option value="1">Um pouco</option>
+								<option value="2">Moderadamente</option>
+								<option value="3">Muito</option>
+								<option value="4">Interfere muitíssimo</option>
+							</select>
+						</div> 
+					</div>
+
+					<div class="form-group p-2">
+						<label class="col-form-label">Quanto os outros notam o seu problema de sono em termos de prejuízo a sua qualidade de vida?</label>
+						<div class="default-select" id="default-select">
+							<select th:field="*{outrosNotam}" data-width="auto">
+								<option value="0">Não se nota</option>
+								<option value="1">Um pouco</option>
+								<option value="2">Moderadamente</option>
+								<option value="3">Muito</option>
+								<option value="4">Notam muitíssimo</option>
+							</select>
+						</div> 
+					</div>
+
+					<div class="form-group p-2">
+						<label class="col-form-label">Quanta preocupação/sofrimento seu problema de sono atual causa?</label>
+						<div class="default-select" id="default-select">
+							<select th:field="*{sofrimentoSono}" data-width="auto">
+								<option value="0">Nenhuma</option>
+								<option value="1">Um pouco</option>
+								<option value="2">Moderadamente</option>
+								<option value="3">Muito</option>
+								<option value="4">Muitíssima</option>
+							</select>
+						</div> 
+					</div>
+
+				</div>
+
+				<div class="button-group-area text-center mt-2">
+					<a href="#" class="genric-btn danger-border radius e-large">Cancelar</a>
+					
+					<!-- <input class="genric-btn info-border radius e-large" type="submit" value="Continuar"/> -->
+					<a href="epworth-form.html" class="genric-btn info-border radius e-large">Continuar</a>
+				</div>
+
+			</form>
+		</div>
+	</div>
+	<!-- Formulario-end -->
+
+
+<!-- footer start -->
+<footer class="footer">
+	<div class="footer_top">
+		<div class="container">
+			<div class="row">
+				<!-- <div class="col-xl-2 offset-xl-1 col-md-6 col-lg-3"> -->
+					<div class="col">
+					 <div class="footer_widget">
+						<h3 class="footer_title">
+							Mapa do Site
+						</h3>
+						<ul>
+							<li><a href="pre-signup.html">Pré-cadastro</a></li>
+							<li><a href="gravidade-form2.html">Índice de Gravidade de Insônia</a></li>
+							<li><a href="epworth-form.html">Escala de Sonolência de Epworth</a></li>
+							<li><a href="atenas-form.html">Escala de Insônia de Atenas</a></li>
+							<li><a href="diario-sono.html">Diário de Sono</a></li>
+							<li><a href="user-page.html">Minha Conta</a></li>
+						</ul>
+
+					</div>
+				</div>
+			   
+				
+				<!-- <div class="col-xl-4 col-md-6 col-lg-4 offset-xl-1"> -->
+				<div class="col offset-2">
+					<div class="footer_widget">
+						<h3 class="footer_title">
+							Endereço
+						</h3>
+
+						<p>
+							Centro Integrado de Vocação Tecnológica (CIVT) <br/>
+							Av. Cap. Mor Gouveia - Lagoa Nova, S/N <br/>
+							Natal-RN
+							<!-- <br> <br> -->
+							
+						</p>
+
+						<h3 class="footer_title mt-5">
+							Telefone
+						</h3>
+						<p>
+							(84) 3342-2216
+						</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="copy-right_text">
+		<div class="container">
+			<div class="footer_border"></div>
+			<div class="row">
+				<div class="col-xl-12">
+					<p class="copy_right text-center">
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+<!-- Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a> -->
+
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos os direitos reservados | Feito com <i class="fa fa-heart-o" aria-hidden="true"></i> pelo <a href="https://portal.imd.ufrn.br/portal/" target="_blank">Instituto Metrópole Digital</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+<!-- footer end  -->
+
+<!-- link that opens popup -->
+
+<!-- form itself end-->
+<form id="test-form" class="white-popup-block mfp-hide">
+<div class="popup_box ">
+	<div class="popup_inner">
+		<h3>Make an Appointment</h3>
+		<form action="#">
+			<div class="row">
+				<div class="col-xl-6">
+					<input id="datepicker" placeholder="Pick date">
+				</div>
+				<div class="col-xl-6">
+					<input id="datepicker2" placeholder="Suitable time">
+				</div>
+				<div class="col-xl-6">
+					<select class="form-select wide" id="default-select" class="">
+						<option data-display="Select Department">Department</option>
+						<option value="1">Eye Care</option>
+						<option value="2">Physical Therapy</option>
+						<option value="3">Dental Care</option>
+					</select>
+				</div>
+				<div class="col-xl-6">
+					<select class="form-select wide" id="default-select" class="">
+						<option data-display="Doctors">Doctors</option>
+						<option value="1">Mirazul Alom</option>
+						<option value="2">Monzul Alom</option>
+						<option value="3">Azizul Isalm</option>
+					</select>
+				</div>
+				<div class="col-xl-6">
+					<input type="text"  placeholder="Name">
+				</div>
+				<div class="col-xl-6">
+					<input type="text"  placeholder="Phone no.">
+				</div>
+				<div class="col-xl-12">
+					<input type="email"  placeholder="Email">
+				</div>
+				<div class="col-xl-12">
+					<button type="submit" class="boxed-btn3">Confirm</button>
+				</div>
+			</div>
+		</form>
+	</div>
+</div>
+</form>
+<!-- form itself end -->
+
+	<!-- JS here -->
+	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
+	<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<script src="js/popper.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/owl.carousel.min.js"></script>
+	<script src="js/isotope.pkgd.min.js"></script>
+	<script src="js/ajax-form.js"></script>
+	<script src="js/waypoints.min.js"></script>
+	<script src="js/jquery.counterup.min.js"></script>
+	<script src="js/imagesloaded.pkgd.min.js"></script>
+	<script src="js/scrollIt.js"></script>
+	<script src="js/jquery.scrollUp.min.js"></script>
+	<script src="js/wow.min.js"></script>
+	<script src="js/nice-select.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="js/jquery.magnific-popup.min.js"></script>
+	<script src="js/plugins.js"></script>
+	<script src="js/gijgo.min.js"></script>
+
+	<!--contact js-->
+	<script src="js/contact.js"></script>
+	<script src="js/jquery.ajaxchimp.min.js"></script>
+	<script src="js/jquery.form.js"></script>
+	<script src="js/jquery.validate.min.js"></script>
+	<script src="js/mail-script.js"></script>
+
+	<script src="js/main.js"></script>
+    <script>
+        $('#datepicker').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+        });
+        $('#datepicker2').datepicker({
+            iconsLibrary: 'fontawesome',
+            icons: {
+             rightIcon: '<span class="fa fa-caret-down"></span>'
+         }
+
+        });
+    </script>
+</body>
+</html>

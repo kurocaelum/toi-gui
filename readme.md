@@ -15,3 +15,5 @@ pre-signup.html
 user-page.html
 
 diario-sono.html
+
+login-create.html
