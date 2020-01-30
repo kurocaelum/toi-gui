@@ -139,21 +139,19 @@
                             </div>   
                         </div>
 
-                        <div class="col">
-                            <div class="form-group">
-                                <input type="text" name="sexo" placeholder="Sexo"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Sexo'" required
-                                            class="form-control">
-                            </div>   
-                        </div>
 
-                        <div class="col">
+                        <div class="col-2">
                             <div class="form-group">
-                                <input type="text" name="estado-civil" placeholder="Estado civil"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Estado civil'" required
-                                            class="form-control">
-                            </div>   
-                        </div>
+                                <select class="form-select wide">
+                                    <option value="0" selected disabled>Estado civil</option>
+                                    <option value="1">Solteiro</option>
+                                    <option value="2">Casado</option>
+                                    <option value="3">Divorciado</option>
+                                    <option value="4">Separado</option>
+                                    <option value="5">Viúvo</option>
+                                </select>
+                            </div>
+                        </div> 
 
                         <!-- <div class="col">
                             <div class="form-group">
@@ -163,7 +161,16 @@
                             </div>                            
                         </div> -->
 
-                        
+                        <div class="col-2">
+                            <div class="form-group">
+                                <select class="form-select wide">
+                                    <option value="0" selected disabled>Sexo</option>
+                                    <option value="1">Masculino</option>
+                                    <option value="2">Feminino</option>
+                                    <option value="3">Outro</option>
+                                </select>
+                            </div>
+                        </div> 
                     </div>
 
                     <div class="row">
@@ -174,34 +181,45 @@
                                             class="form-control">
                             </div>                            
                         </div>
+
+                        <div class="col-3">
+                            <div class="form-group">
+                                <select class="form-select wide">
+                                    <option value="0" selected disabled>Renda familiar</option>
+                                    <option value="1">Até 1 salário mínimo</option>
+                                    <option value="2">2 salários mínimos</option>
+                                    <option value="3">3 salários mínimos</option>
+                                    <option value="4">4 salários mínimos</option>
+                                    <option value="5">5 ou mais salários mínimos</option>
+                                </select>
+                            </div>
+                        </div> 
+                        
+                        <div class="col-3">
+                            <div class="form-group">
+                                <!-- TODO renomear título para algo mais curto -->
+                                <select class="form-select wide">
+                                    <!-- <option value="0" selected disabled>Contexto social em que vive</option> -->
+                                    <option value="0" selected disabled>Contexto social</option>
+                                    <option value="1">Urbano</option>
+                                    <option value="2">Rural</option>
+                                </select>
+                            </div>
+                        </div>
                     </div>
 
 
-                    <div class="row">
-                        <div class="col">
+                    <!-- <div class="row"> -->
+                        <!-- <div class="col">
                             <div class="form-group">
                                 <input type="text" name="renda-familiar" placeholder="Renda familiar"
                                             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Renda familiar'" required
                                             class="form-control">
                             </div>   
-                        </div>
-                        
-                        <div class="col">
-                            <div class="row">
-                                <div class="col">
-                                    <label class="col-form-label">Contexto social em que vive</label> 
-                                </div>
-                                <div class="col">
-                                    <div class="default-select">
-                                        <select th:field="*{iniciarSono}">
-                                            <option value="0">Urbano</option>
-                                            <option value="1">Rural</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> 
-                    </div>
+                        </div> -->
+
+                         
+                    <!-- </div> -->
 
                 </div>
             </div>
@@ -214,45 +232,48 @@
                     <div class="row">
                         <div class="col">
                             <!-- TODO help text -->
-                            <label>Diagnósticos de doença (inclusive transtornos de sono)</label>
+                            <label>
+                                Diagnósticos de doença 
+                                <small class="form-text text-muted">Inclusive transtornos de sono</small>
+                            </label>
                             
                             <div class="form-row">
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
         
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
@@ -266,43 +287,44 @@
                             <!-- TODO help text -->
                             <label>Medicamentos em uso para o sono (medicamento, dosagem, frequência)</label>
                             
+                            
                             <div class="form-row">
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text" placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
         
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text" placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text" placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text" name="" placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text" name="" placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
@@ -319,40 +341,40 @@
                             <div class="form-row">
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
         
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                        <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                                     </div>
                                 </div>
@@ -372,16 +394,16 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                <input type="text"  placeholder=""
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                             class="form-control">
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                <input type="text"  placeholder=""
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                                 class="form-control">
                             </div>
                         </div>
@@ -390,16 +412,16 @@
                     <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                <input type="text"  placeholder=""
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                                 class="form-control">
                             </div>
                         </div>
 
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                <input type="text"  placeholder=""
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                                 class="form-control">
                             </div>
                         </div>
@@ -434,14 +456,14 @@
                             <label>Quais?</label>
                             
                             <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                <input type="text"  placeholder=""
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                     class="form-control">
                             </div>
 
                             <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                <input type="text"  placeholder=""
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
                                     class="form-control">
                             </div>
                         </div>
