@@ -76,9 +76,9 @@
         <h3>Pré-cadastro</h3>
 
         <form action="#">
-            <!-- informacoes_pessoais-start -->
+            <!-- dados_sociodemograficos-start -->
             <div class="card my-3">
-                <div class="card-header">Informações pessoais</div>
+                <div class="card-header">Dados sociodemográficos</div>
                 <div class="card-body">
                     <div class="row">
                         <div class="col-8">
@@ -91,11 +91,79 @@
 
                         <div class="col">
                             <div class="form-group">
+                                <input id="datepicker" placeholder="Data de nascimento" required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-7">
+                            <div class="form-group">
+                                <input type="text" name="endereço" placeholder="Endereço"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Endereço'" required
+                                            class="form-control">
+                            </div>                            
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="cidade-estado" placeholder="Cidade/Estado"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Cidade/Estado'" required
+                                                class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="anos-escolaridade" placeholder="Anos de escolaridade"
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'Anos de escolaridade'" required
+                                                class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="telefone" placeholder="Telefone"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefone'" required
+                                            class="form-control">
+                            </div>                     
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
                                 <input type="text" name="ocupacao" placeholder="Ocupação"
                                             onfocus="this.placeholder = ''" onblur="this.placeholder = 'Ocupação'" required
                                             class="form-control">
                             </div>   
-                        </div>                        
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="sexo" placeholder="Sexo"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Sexo'" required
+                                            class="form-control">
+                            </div>   
+                        </div>
+
+                        <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="estado-civil" placeholder="Estado civil"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Estado civil'" required
+                                            class="form-control">
+                            </div>   
+                        </div>
+
+                        <!-- <div class="col">
+                            <div class="form-group">
+                                <input type="text" name="cpf" placeholder="CPF"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'CPF'" required
+                                            class="form-control">
+                            </div>                            
+                        </div> -->
+
+                        
                     </div>
 
                     <div class="row">
@@ -106,72 +174,35 @@
                                             class="form-control">
                             </div>                            
                         </div>
+                    </div>
 
+
+                    <div class="row">
                         <div class="col">
                             <div class="form-group">
-                                <input type="text" name="telefone" placeholder="Telefone"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Telefone'" required
+                                <input type="text" name="renda-familiar" placeholder="Renda familiar"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Renda familiar'" required
                                             class="form-control">
-                            </div>                            
+                            </div>   
                         </div>
                         
                         <div class="col">
-                            <div class="form-group">
-                                <input type="text" name="cpf" placeholder="CPF"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'CPF'" required
-                                            class="form-control">
-                            </div>                            
-                        </div>
-
-                        <div class="col">
-                            <div class="form-group">
-                                <input id="datepicker" placeholder="Data de nascimento" required>
+                            <div class="row">
+                                <div class="col">
+                                    <label class="col-form-label">Contexto social em que vive</label> 
+                                </div>
+                                <div class="col">
+                                    <div class="default-select">
+                                        <select th:field="*{iniciarSono}">
+                                            <option value="0">Urbano</option>
+                                            <option value="1">Rural</option>
+                                        </select>
+                                    </div>
+                                </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- informacoes_pessoais-end -->
-
-            <!-- dados_sociodemograficos-start -->
-            <div class="card my-3">
-                <div class="card-header">Dados sociodemográficos</div>
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
-                                            class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
-                                                class="form-control">
-                            </div>
-                        </div>
+                        </div> 
                     </div>
 
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
-                                                class="form-control">
-                            </div>
-                        </div>
-
-                        <div class="col">
-                            <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
-                                                class="form-control">
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <!-- dados_sociodemograficos-end -->
@@ -179,45 +210,158 @@
             <!-- historico_clinico-start -->
             <div class="card my-3">
                 <div class="card-header">Histórico clínico</div>
-                    
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <div class="form-group">
-                                <label>Toma medicação?</label>
-                                <input type="checkbox" id="confirm-checkbox" class="ml-2">
-                                <small class="form-text text-muted">(que não seja para dormir)</small>
-                            </div>
+                            <!-- TODO help text -->
+                            <label>Diagnósticos de doença (inclusive transtornos de sono)</label>
                             
-                            <!-- <div class="switch-wrap d-flex justify-content-start">
-                                <p>03. Confirm Color Checkbox</p>
-                                <div class="confirm-checkbox">
-                                    <label>Toma medicação? (que não seja para dormir)</label>
-                                    <input type="checkbox" id="confirm-checkbox">
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
                                 </div>
-                            </div> -->
-                        </div>
+        
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
 
-                        <div class="col">
-                            <label>Quais?</label>
-                            
-                            <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
-                                    class="form-control">
-                            </div>
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
 
-                            <div class="form-group">
-                                <input type="text" name="wip" placeholder="WIP"
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
-                                    class="form-control">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
                             </div>
                         </div>
                     </div>
-                </div>
 
-                
-                <div class="card-body"></div>
+                    <div class="row">
+                        <div class="col">
+                            <!-- TODO help text -->
+                            <label>Medicamentos em uso para o sono (medicamento, dosagem, frequência)</label>
+                            
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col">
+                            <!-- TODO help text -->
+                            <label>Medicamentos em uso para outras morbidades (medicamento, dosagem, frequência)</label>
+                            
+                            <div class="form-row">
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+        
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col">
+                                    <div class="form-group">
+                                        <input type="text" name="wip" placeholder="WIP"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
             <!-- historico_clinico-end -->
 
@@ -263,6 +407,53 @@
                 </div>
             </div>
             <!-- historico_de_sono-end -->
+
+            <!-- dados_sono-start -->
+            <div class="card my-3">
+                <div class="card-header">Dados sobre o sono</div>
+                    
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col">
+                            <div class="form-group">
+                                <label>Toma medicação?</label>
+                                <input type="checkbox" id="confirm-checkbox" class="ml-2">
+                                <small class="form-text text-muted">(que não seja para dormir)</small>
+                            </div>
+                            
+                            <!-- <div class="switch-wrap d-flex justify-content-start">
+                                <p>03. Confirm Color Checkbox</p>
+                                <div class="confirm-checkbox">
+                                    <label>Toma medicação? (que não seja para dormir)</label>
+                                    <input type="checkbox" id="confirm-checkbox">
+                                </div>
+                            </div> -->
+                        </div>
+
+                        <div class="col">
+                            <label>Quais?</label>
+                            
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                    class="form-control">
+                            </div>
+
+                            <div class="form-group">
+                                <input type="text" name="wip" placeholder="WIP"
+                                    onfocus="this.placeholder = ''" onblur="this.placeholder = 'WIP'" required
+                                    class="form-control">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                
+                <div class="card-body"></div>
+            </div>
+            <!-- dados_sono-end -->
+
+            
 
             <div class="button-group-area text-center my-4">
                 <a href="index2.html" class="genric-btn danger-border radius e-large">Cancelar</a>
