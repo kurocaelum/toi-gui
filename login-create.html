@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>TCC Online - Criar login</title>
+	<title>TCC Online - Cadastro de credenciais</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -71,125 +71,57 @@
 
 
 	<!-- Formulario-start -->
-	<div class="container">
+	<div class="container mt-4">
 		<div class="section-top-border">
-			<h2 class="mb-40">Cadastro</h2>
+			<h3 class="mb-3">Aprovado na triagem</h3>
 
 			<form action="#">
-				<h4 class="mb-30">Avalie a gravidade atual (2 últimas semanas) do seu problema de insônia</h4>
 				<div class="row">
 					<div class="col">
-						<div class="form-group">
-							<label class="col-form-label">Dificuldade de iniciar o sono</label> 
-							<div class="default-select" id="default-select">
-								<select th:field="*{iniciarSono}">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
+						<div class="card my-3">
+							<div class="card-header">Cadastro de credenciais</div>
+							<div class="card-body">
+								<div class="row">
+									<div class="col">
+										<div class="form-group">
+											<input type="text" name="inputLogin" placeholder="Login" required class="form-control">
+										</div>
+									</div>
+								</div>
+		
+								<div class="row">
+									<div class="col">
+										<div class="form-group">
+											<input type="password" name="inputSenha1" placeholder="Senha" required class="form-control">
+										</div>
+									</div>
+								</div>
+		
+								<div class="row">
+									<div class="col">
+										<div class="form-group">
+											<input type="password" name="inputSenha2" placeholder="Confirmar senha" required class="form-control">
+										</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
-
-					<div class="col">
-						<div class="form-group">
-							<label class="col-form-label">Dificuldade de manter o sono </label> 
-							<div class="default-select" id="default-select">
-								<select th:field="*{manterSono}" data-width="auto">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="form-group">
-							<label class="col-form-label">Acordar cedo demais </label>
-							<div class="default-select" id="default-select">
-								<select th:field="*{acordarCedo}" data-width="auto">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
-							</div> 
-						</div>
-					</div>
 				</div>
 
-				<div class="d-flex flex-column">
+				<div class="button-group-area text-center my-4">
+					<a href="index2.html" class="genric-btn danger-border radius e-large">Cancelar</a>
+					<!-- <input class="genric-btn info-border radius e-large" type="submit" value="Cadastrar"/> -->
 					
-					<div class="form-group p-2">
-						<label class="col-form-label">Quão satisfeito/insatisfeito você está com seu padrão de sono atual?</label>
-						<br/>
-						<label class="form-sm">(0 indica muito insatisfeito, 4 indica muito satisfeito)</label>
-						<div class="default-select" id="default-select">
-							<select th:field="*{acordarCedo}" data-width="auto">
-								<option value="0">0</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-							</select>
-						</div> 
-					</div>
-
-					<div class="form-group p-2">
-						<label class="col-form-label">Quanto você considera que seu problema de sono interfere na sua atividade diária?</label>
-						<div class="default-select" id="default-select">
-							<select th:field="*{interferenciaDiaria}" data-width="auto">
-								<option value="0">Não interfere</option>
-								<option value="1">Um pouco</option>
-								<option value="2">Moderadamente</option>
-								<option value="3">Muito</option>
-								<option value="4">Interfere muitíssimo</option>
-							</select>
-						</div> 
-					</div>
-
-					<div class="form-group p-2">
-						<label class="col-form-label">Quanto os outros notam o seu problema de sono em termos de prejuízo a sua qualidade de vida?</label>
-						<div class="default-select" id="default-select">
-							<select th:field="*{outrosNotam}" data-width="auto">
-								<option value="0">Não se nota</option>
-								<option value="1">Um pouco</option>
-								<option value="2">Moderadamente</option>
-								<option value="3">Muito</option>
-								<option value="4">Notam muitíssimo</option>
-							</select>
-						</div> 
-					</div>
-
-					<div class="form-group p-2">
-						<label class="col-form-label">Quanta preocupação/sofrimento seu problema de sono atual causa?</label>
-						<div class="default-select" id="default-select">
-							<select th:field="*{sofrimentoSono}" data-width="auto">
-								<option value="0">Nenhuma</option>
-								<option value="1">Um pouco</option>
-								<option value="2">Moderadamente</option>
-								<option value="3">Muito</option>
-								<option value="4">Muitíssima</option>
-							</select>
-						</div> 
-					</div>
-
-				</div>
-
-				<div class="button-group-area text-center mt-2">
-					<a href="#" class="genric-btn danger-border radius e-large">Cancelar</a>
+					<!-- Button trigger modal -->
+					<button type="button" class="genric-btn info-border radius e-large" data-toggle="modal" data-target="#preSignupSubmit">
+						Cadastrar
+					</button>
 					
-					<!-- <input class="genric-btn info-border radius e-large" type="submit" value="Continuar"/> -->
-					<a href="epworth-form.html" class="genric-btn info-border radius e-large">Continuar</a>
 				</div>
-
+				
 			</form>
+				
 		</div>
 	</div>
 	<!-- Formulario-end -->
@@ -313,6 +245,28 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> Todos
 </div>
 </form>
 <!-- form itself end -->
+
+<!-- Modal-start -->
+    <div class="modal fade" id="preSignupSubmit" tabindex="-1" role="dialog" aria-labelledby="preSignupLabel" aria-hidden="true">
+        <div class="modal-dialog text-center" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="preSignupLabel">Dados enviados!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body text-center">
+                   Cadastro realizado com sucesso.
+                </div>
+                <div class="modal-footer">
+                    <!-- No mockup está como "Retornar para a home" -->
+                    <a href="gravidade-form2.html" class="genric-btn info-border radius e-large">Entrar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+  <!-- Modal-end -->	
 
 	<!-- JS here -->
 	<script src="js/vendor/modernizr-3.5.0.min.js"></script>
