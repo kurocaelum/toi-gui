@@ -206,20 +206,7 @@
                                 </select>
                             </div>
                         </div>
-                    </div>
-
-
-                    <!-- <div class="row"> -->
-                        <!-- <div class="col">
-                            <div class="form-group">
-                                <input type="text" name="renda-familiar" placeholder="Renda familiar"
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Renda familiar'" required
-                                            class="form-control">
-                            </div>   
-                        </div> -->
-
-                         
-                    <!-- </div> -->
+                    </div>                   
 
                 </div>
             </div>
@@ -231,50 +218,33 @@
                 <div class="card-body">
                     <div class="row">
                         <div class="col">
-                            <!-- TODO help text -->
                             <label>
                                 Diagnósticos de doença 
                                 <small class="form-text text-muted">Inclusive transtornos de sono</small>
                             </label>
                             
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                        <input type="text"  placeholder="Diagnóstico 1"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diagnóstico 1'" 
                                             class="form-control">
                                     </div>
                                 </div>
-        
-                                <div class="col">
+
+                                <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                        <input type="text"  placeholder="Diagnóstico 2"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Diagnóstico 2'" 
                                             class="form-control">
                                     </div>
                                 </div>
 
                                 <div class="col">
                                     <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
+                                        <button type="button" class="btn btn-outline-success my-2 my-sm-0 mx-2">
+                                            Adicionar
+                                        </button>
                                     </div>
                                 </div>
 
@@ -284,102 +254,91 @@
 
                     <div class="row">
                         <div class="col">
-                            <!-- TODO help text -->
-                            <label>Medicamentos em uso para o sono (medicamento, dosagem, frequência)</label>
+                            <label>Medicamentos em uso para o sono</label>
                             
                             
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text" placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                        <!-- <small class="form-text text-muted">Medicamento</small> -->
+                                        <input type="text" placeholder="Medicamento"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Medicamento'"
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="form-group">
+                                        <!-- <small class="form-text text-muted">Dosagem</small> -->
+                                        <input type="text" placeholder="Dosagem"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dosagem'"
                                             class="form-control">
                                     </div>
                                 </div>
         
-                                <div class="col">
+                                <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text" placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                        <!-- <small class="form-text text-muted">Frequência</small> -->
+                                        <input type="text" placeholder="Frequência"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Frequência'"
                                             class="form-control">
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text" placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
+                                        <button type="button" class="btn btn-outline-success my-2 my-sm-0 mx-2">
+                                            Adicionar
+                                        </button>
                                     </div>
                                 </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input type="text" name="" placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input type="text" name="" placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
-                                    </div>
-                                </div>
-
                             </div>
+                            
                         </div>
                     </div>
 
                     <div class="row">
                         <div class="col">
-                            <!-- TODO help text -->
-                            <label>Medicamentos em uso para outras morbidades (medicamento, dosagem, frequência)</label>
+                            <label>Medicamentos em uso para outras morbidades</label>
+                            
                             
                             <div class="form-row">
-                                <div class="col">
+                                <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                        <!-- <small class="form-text text-muted">Medicamento</small> -->
+                                        <input type="text" placeholder="Medicamento"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Medicamento'"
+                                            class="form-control">
+                                    </div>
+                                </div>
+
+                                <div class="col-2">
+                                    <div class="form-group">
+                                        <!-- <small class="form-text text-muted">Dosagem</small> -->
+                                        <input type="text" placeholder="Dosagem"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Dosagem'"
                                             class="form-control">
                                     </div>
                                 </div>
         
-                                <div class="col">
+                                <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                        <!-- <small class="form-text text-muted">Frequência</small> -->
+                                        <input type="text" placeholder="Frequência"
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = 'Frequência'"
                                             class="form-control">
                                     </div>
                                 </div>
 
-                                <div class="col">
+                                <div class="col-2">
                                     <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
+                                        <button type="button" class="btn btn-outline-success my-2 my-sm-0 mx-2">
+                                            Adicionar
+                                        </button>
                                     </div>
                                 </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
-                                    </div>
-                                </div>
-
-                                <div class="col">
-                                    <div class="form-group">
-                                        <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                            class="form-control">
-                                    </div>
-                                </div>
-
                             </div>
+                            
                         </div>
                     </div>
 
@@ -387,15 +346,29 @@
             </div>
             <!-- historico_clinico-end -->
 
-            <!-- historico_de_sono-start -->
+            <!-- historico_sono-start -->
             <div class="card my-3">
                 <div class="card-header">Histórico de sono</div>
                 <div class="card-body">
                     <div class="row">
-                        <div class="col">
+                        <div class="col-4">
+                            <div class="form-group">
+                                <label>Apresenta dificuldades em iniciar o sono?</label>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-6">
+                                        <select class="form-select wide">
+                                            <option value="0">Sim</option>
+                                            <option value="1">Não</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+                        </div> 
+
+                        <!-- <div class="col">
                             <div class="form-group">
                                 <input type="text"  placeholder=""
-                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                            onfocus="this.placeholder = ''" onblur="this.placeholder = ''" 
                                             class="form-control">
                             </div>
                         </div>
@@ -403,17 +376,17 @@
                         <div class="col">
                             <div class="form-group">
                                 <input type="text"  placeholder=""
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" 
                                                 class="form-control">
                             </div>
-                        </div>
+                        </div> -->
                     </div>
 
-                    <div class="row">
+                    <!-- <div class="row">
                         <div class="col">
                             <div class="form-group">
                                 <input type="text"  placeholder=""
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" 
                                                 class="form-control">
                             </div>
                         </div>
@@ -421,61 +394,14 @@
                         <div class="col">
                             <div class="form-group">
                                 <input type="text"  placeholder=""
-                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
+                                                onfocus="this.placeholder = ''" onblur="this.placeholder = ''" 
                                                 class="form-control">
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
-            <!-- historico_de_sono-end -->
-
-            <!-- dados_sono-start -->
-            <div class="card my-3">
-                <div class="card-header">Dados sobre o sono</div>
-                    
-                <div class="card-body">
-                    <div class="row">
-                        <div class="col">
-                            <div class="form-group">
-                                <label>Toma medicação?</label>
-                                <input type="checkbox" id="confirm-checkbox" class="ml-2">
-                                <small class="form-text text-muted">(que não seja para dormir)</small>
-                            </div>
-                            
-                            <!-- <div class="switch-wrap d-flex justify-content-start">
-                                <p>03. Confirm Color Checkbox</p>
-                                <div class="confirm-checkbox">
-                                    <label>Toma medicação? (que não seja para dormir)</label>
-                                    <input type="checkbox" id="confirm-checkbox">
-                                </div>
-                            </div> -->
-                        </div>
-
-                        <div class="col">
-                            <label>Quais?</label>
-                            
-                            <div class="form-group">
-                                <input type="text"  placeholder=""
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                    class="form-control">
-                            </div>
-
-                            <div class="form-group">
-                                <input type="text"  placeholder=""
-                                    onfocus="this.placeholder = ''" onblur="this.placeholder = ''" required
-                                    class="form-control">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                
-                <div class="card-body"></div>
-            </div>
-            <!-- dados_sono-end -->
-
-            
+            <!-- historico_sono-end -->            
 
             <div class="button-group-area text-center my-4">
                 <a href="index2.html" class="genric-btn danger-border radius e-large">Cancelar</a>
