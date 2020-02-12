@@ -81,14 +81,16 @@
 					<div class="col">
 						<div class="form-group">
 							<label class="col-form-label">Dificuldade de iniciar o sono</label> 
-							<div class="default-select" id="default-select">
-								<select th:field="*{iniciarSono}">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
+							<div class="form-row">
+								<div class="col-lg-6">
+									<select th:field="*{iniciarSono}" class="form-select wide">
+										<option value="0">Nenhuma</option>
+										<option value="1">Leve</option>
+										<option value="2">Moderada</option>
+										<option value="3">Grave</option>
+										<option value="4">Muito grave</option>
+									</select>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -96,14 +98,16 @@
 					<div class="col">
 						<div class="form-group">
 							<label class="col-form-label">Dificuldade de manter o sono </label> 
-							<div class="default-select" id="default-select">
-								<select th:field="*{manterSono}" data-width="auto">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
+							<div class="form-row">
+								<div class="col-lg-6">
+									<select th:field="*{manterSono}" class="form-select wide">
+										<option value="0">Nenhuma</option>
+										<option value="1">Leve</option>
+										<option value="2">Moderada</option>
+										<option value="3">Grave</option>
+										<option value="4">Muito grave</option>
+									</select>
+								</div>
 							</div>
 						</div>
 					</div>
@@ -111,15 +115,17 @@
 					<div class="col">
 						<div class="form-group">
 							<label class="col-form-label">Acordar cedo demais </label>
-							<div class="default-select" id="default-select">
-								<select th:field="*{acordarCedo}" data-width="auto">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
-							</div> 
+							<div class="form-row">
+								<div class="col-lg-6">
+									<select th:field="*{acordarCedo}" class="form-select wide">
+										<option value="0">Nenhuma</option>
+										<option value="1">Leve</option>
+										<option value="2">Moderada</option>
+										<option value="3">Grave</option>
+										<option value="4">Muito grave</option>
+									</select>
+								</div> 
+							</div>
 						</div>
 					</div>
 				</div>
@@ -130,54 +136,62 @@
 						<label class="col-form-label">Quão satisfeito/insatisfeito você está com seu padrão de sono atual?</label>
 						<br/>
 						<label class="form-sm">(0 indica muito insatisfeito, 4 indica muito satisfeito)</label>
-						<div class="default-select" id="default-select">
-							<select th:field="*{acordarCedo}" data-width="auto">
-								<option value="0">0</option>
-								<option value="1">1</option>
-								<option value="2">2</option>
-								<option value="3">3</option>
-								<option value="4">4</option>
-							</select>
-						</div> 
+						<div class="form-row">
+							<div class="col-lg-1">
+								<select th:field="*{acordarCedo}" class="form-select wide">
+									<option value="0">0</option>
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+									<option value="4">4</option>
+								</select>
+							</div> 
+						</div>
 					</div>
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Quanto você considera que seu problema de sono interfere na sua atividade diária?</label>
-						<div class="default-select" id="default-select">
-							<select th:field="*{interferenciaDiaria}" data-width="auto">
-								<option value="0">Não interfere</option>
-								<option value="1">Um pouco</option>
-								<option value="2">Moderadamente</option>
-								<option value="3">Muito</option>
-								<option value="4">Interfere muitíssimo</option>
-							</select>
-						</div> 
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select th:field="*{interferenciaDiaria}" class="form-select wide">
+									<option value="0">Não interfere</option>
+									<option value="1">Um pouco</option>
+									<option value="2">Moderadamente</option>
+									<option value="3">Muito</option>
+									<option value="4">Interfere muitíssimo</option>
+								</select>
+							</div> 
+						</div>
 					</div>
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Quanto os outros notam o seu problema de sono em termos de prejuízo a sua qualidade de vida?</label>
-						<div class="default-select" id="default-select">
-							<select th:field="*{outrosNotam}" data-width="auto">
-								<option value="0">Não se nota</option>
-								<option value="1">Um pouco</option>
-								<option value="2">Moderadamente</option>
-								<option value="3">Muito</option>
-								<option value="4">Notam muitíssimo</option>
-							</select>
-						</div> 
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select th:field="*{outrosNotam}" class="form-select wide">
+									<option value="0">Não se nota</option>
+									<option value="1">Um pouco</option>
+									<option value="2">Moderadamente</option>
+									<option value="3">Muito</option>
+									<option value="4">Notam muitíssimo</option>
+								</select>
+							</div> 
+						</div>
 					</div>
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Quanta preocupação/sofrimento seu problema de sono atual causa?</label>
-						<div class="default-select" id="default-select">
-							<select th:field="*{sofrimentoSono}" data-width="auto">
-								<option value="0">Nenhuma</option>
-								<option value="1">Um pouco</option>
-								<option value="2">Moderadamente</option>
-								<option value="3">Muito</option>
-								<option value="4">Muitíssima</option>
-							</select>
-						</div> 
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select th:field="*{sofrimentoSono}" class="form-select wide">
+									<option value="0">Nenhuma</option>
+									<option value="1">Um pouco</option>
+									<option value="2">Moderadamente</option>
+									<option value="3">Muito</option>
+									<option value="4">Muitíssima</option>
+								</select>
+							</div> 
+						</div>
 					</div>
 
 				</div>
