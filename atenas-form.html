@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="x-ua-compatible" content="ie=edge">
-	<title>TCC Online - Atenas</title>
+	<title>TCC Online</title>
 	<meta name="description" content="">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -81,152 +81,120 @@
 
 			<form action="#">
 				<h4 class="mb-30">Selecione a opção que melhor estima sua dificuldade, desde que isso tenha ocorrido pelo menos três vezes por semana no último mês.</h4>
-				<!-- <div class="row"> -->
-					<!--
-					<div class="col">
-						<div class="form-group">
-							<label class="col-form-label">Dificuldade de iniciar o sono</label> 
-							<div class="default-select" id="default-select">
-								<select th:field="*{iniciarSono}">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="form-group">
-							<label class="col-form-label">Dificuldade de manter o sono </label> 
-							<div class="default-select" id="default-select">
-								<select th:field="*{manterSono}" data-width="auto">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
-							</div>
-						</div>
-					</div>
-
-					<div class="col">
-						<div class="form-group">
-							<label class="col-form-label">Acordar cedo demais </label>
-							<div class="default-select" id="default-select">
-								<select th:field="*{acordarCedo}" data-width="auto">
-									<option value="0">Nenhuma</option>
-									<option value="1">Leve</option>
-									<option value="2">Moderada</option>
-									<option value="3">Grave</option>
-									<option value="4">Muito grave</option>
-								</select>
-							</div> 
-						</div>
-					</div>-->
-				<!-- </div> -->
-
+				
 				<div class="d-flex flex-column">
 					
 					<div class="form-group p-2">
 						<label class="col-form-label">Início do sono: tempo que demora para adormecer após apagar as luzes</label>
-						<br/>
-						<div class="default-select" id="default-select">
-							<select data-width="auto">
-								<option value="0">Nenhum problema</option>
-								<option value="1">Ligeira demora</option>
-								<option value="2">Moderada demora</option>
-								<option value="3">Muita demora/não dorme</option>
-							</select>
-						</div> 
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select class="form-select wide">
+									<option value="0">Nenhum problema</option>
+									<option value="1">Ligeira demora</option>
+									<option value="2">Moderada demora</option>
+									<option value="3">Muita demora/não dorme</option>
+								</select>
+							</div> 
+						</div>
 					</div>
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Despetares durante a noite</label>
-						<div class="default-select" id="default-select">
-							<select data-width="auto">
-								<option value="0">Nenhum problema</option>
-								<option value="1">Pequeno problema</option>
-								<option value="2">Problema considerável</option>
-								<option value="3">Problema sério/não dorme</option>
-							</select>
-						</div> 
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select class="form-select wide">
+									<option value="0">Nenhum problema</option>
+									<option value="1">Pequeno problema</option>
+									<option value="2">Problema considerável</option>
+									<option value="3">Problema sério/não dorme</option>
+								</select>
+							</div> 
+						</div>
 					</div>
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Acordar mais cedo que o desejado e não conseguir mais dormir</label>
-						<div class="default-select" id="default-select">
-							<select data-width="auto">
-								<option value="0">Não é mais cedo</option>
-								<option value="1">Um pouco mais cedo</option>
-								<option value="2">Moderadamente mais cedo</option>
-								<option value="3">Muito mais cedo/não dorme</option>
-							</select>
-						</div> 
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select class="form-select wide">
+									<option value="0">Não é mais cedo</option>
+									<option value="1">Um pouco mais cedo</option>
+									<option value="2">Moderadamente mais cedo</option>
+									<option value="3">Muito mais cedo/não dorme</option>
+								</select>
+							</div> 
+						</div>
 					</div>
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Duração total do sono</label>
-						<div class="default-select" id="default-select">
-							<select data-width="auto">
-								<option value="0">Suficiente</option>
-								<option value="1">Ligeiramente insuficiente</option>
-								<option value="2">Moderadamente insuficiente</option>
-								<option value="3">Muito insuficiente/não dorme</option>
-							</select>
-						</div> 
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select class="form-select wide">
+									<option value="0">Suficiente</option>
+									<option value="1">Ligeiramente insuficiente</option>
+									<option value="2">Moderadamente insuficiente</option>
+									<option value="3">Muito insuficiente/não dorme</option>
+								</select>
+							</div> 
+						</div>
 					</div>
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Qualidade do sono (não importa se dorme pouco tempo)</label>
-						<div class="default-select" id="default-select">
-							<select data-width="auto">
-								<option value="0">Satisfatório</option>
-								<option value="1">Ligeiramente insatisfatório</option>
-								<option value="2">Moderadamente insatisfatório</option>
-								<option value="3">Muito insatisfatório/não dorme</option>
-							</select>
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select class="form-select wide">
+									<option value="0">Satisfatório</option>
+									<option value="1">Ligeiramente insatisfatório</option>
+									<option value="2">Moderadamente insatisfatório</option>
+									<option value="3">Muito insatisfatório/não dorme</option>
+								</select>
+							</div>
 						</div>
 					</div>
 
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Sensação de bem-estar durante o dia</label>
-						<div class="default-select" id="default-select">
-							<select data-width="auto">
-								<option value="0">Normal</option>
-								<option value="1">Ligeiramente diminuída</option>
-								<option value="2">Moderadamente diminuída</option>
-								<option value="3">Muito diminuída</option>
-							</select>
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select class="form-select wide">
+									<option value="0">Normal</option>
+									<option value="1">Ligeiramente diminuída</option>
+									<option value="2">Moderadamente diminuída</option>
+									<option value="3">Muito diminuída</option>
+								</select>
+							</div>
 						</div>
 					</div>
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Funcionamento físico e mental durante o dia</label>
-						<div class="default-select" id="default-select">
-							<select data-width="auto">
-								<option value="0">Normal</option>
-								<option value="1">Ligeiramente diminuído</option>
-								<option value="2">Moderadamente diminuído</option>
-								<option value="3">Muito diminuído</option>
-							</select>
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select class="form-select wide">
+									<option value="0">Normal</option>
+									<option value="1">Ligeiramente diminuído</option>
+									<option value="2">Moderadamente diminuído</option>
+									<option value="3">Muito diminuído</option>
+								</select>
+							</div>
 						</div>
 					</div>
 
 
 					<div class="form-group p-2">
 						<label class="col-form-label">Sonolência durante o dia</label>
-						<div class="default-select" id="default-select">
-							<select data-width="auto">
-								<option value="0">Nenhuma</option>
-								<option value="1">Leve</option>
-								<option value="2">Considerável</option>
-								<option value="3">Intensa</option>
-							</select>
+						<div class="form-row">
+							<div class="col-lg-3">
+								<select class="form-select wide">
+									<option value="0">Nenhuma</option>
+									<option value="1">Leve</option>
+									<option value="2">Considerável</option>
+									<option value="3">Intensa</option>
+								</select>
+							</div>
 						</div>
 					</div>
 				</div>
@@ -269,7 +237,7 @@
 				</div>
 			   
 				
-				<!-- <div class="col-xl-4 col-md-6 col-lg-4 offset-xl-1"> -->
+				<!-- <div class="col-xl-4 col-md-6 col-lg-3 offset-xl-1"> -->
 				<div class="col offset-2">
 					<div class="footer_widget">
 						<h3 class="footer_title">
